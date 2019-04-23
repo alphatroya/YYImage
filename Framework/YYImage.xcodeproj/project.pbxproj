@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D49C3E7D226F900000C40BBE /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49C3E7C226F8FFF00C40BBE /* WebP.framework */; };
 		D9A995351F05644B0062698B /* YYAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A9952B1F05644A0062698B /* YYAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D9A995361F05644B0062698B /* YYAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D9A9952C1F05644A0062698B /* YYAnimatedImageView.m */; };
 		D9A995371F05644B0062698B /* YYFrameImage.h in Headers */ = {isa = PBXBuildFile; fileRef = D9A9952D1F05644A0062698B /* YYFrameImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D49C3E7C226F8FFF00C40BBE /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebP.framework; path = ../Vendor/WebP.framework; sourceTree = "<group>"; };
 		D9A9951F1F0564180062698B /* YYImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YYImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A995231F0564180062698B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9A9952B1F05644A0062698B /* YYAnimatedImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAnimatedImageView.h; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				D9A9954B1F0564D40062698B /* Accelerate.framework in Frameworks */,
 				D9A9954C1F0564D40062698B /* ImageIO.framework in Frameworks */,
 				D9A9954D1F0564D40062698B /* MobileCoreServices.framework in Frameworks */,
+				D49C3E7D226F900000C40BBE /* WebP.framework in Frameworks */,
 				D9A9954E1F0564D40062698B /* AssetsLibrary.framework in Frameworks */,
 				D9A9954F1F0564D40062698B /* libz.tbd in Frameworks */,
 			);
@@ -89,6 +92,7 @@
 		D9A9952A1F05644A0062698B /* YYImage */ = {
 			isa = PBXGroup;
 			children = (
+				D49C3E7C226F8FFF00C40BBE /* WebP.framework */,
 				D9A9952F1F05644A0062698B /* YYImage.h */,
 				D9A995301F05644A0062698B /* YYImage.m */,
 				D9A995331F05644A0062698B /* YYSpriteSheetImage.h */,
@@ -328,6 +332,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = ../Vendor/;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -347,6 +352,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = ../Vendor/;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
